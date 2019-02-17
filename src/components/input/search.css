@@ -1,0 +1,9 @@
+.search {
+    display: flex;
+}
+.go {
+    width: 60px;
+    font-size: 30px;
+    background-color: aqua;
+    cursor: pointer;
+}
