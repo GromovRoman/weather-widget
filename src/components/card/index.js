@@ -13,9 +13,9 @@ export default class Card extends React.Component {
     render() {
         return(
             <div className={'card'}>
-                <div onClick={() => {this.props.del}} className={'del'} id={this.props.id}>X</div>
+                <div onClick={() => this.props.del(this.props.id)} className={'del'}>X</div>
                 <div className={'cardTitle'}>
-                    City: {this.props.data.name}
+                    City: {this.props.data.name !== undefined? this.props.data.name: ''}
                 </div>
                 <div className={'cardTemp'}>
                     Temp: {this.props.data.main !== undefined? this.props.data.main.temp: ''}

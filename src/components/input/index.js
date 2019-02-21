@@ -33,9 +33,13 @@ export default class Search extends React.Component {
     }
 
     del = (id) => {
-        let clone = [...this.state.cards];
-        console.log(clone);
-        console.log(id);
+        let cloneStateCards = [...this.state.cards];
+
+        cloneStateCards.splice(id, 1);
+
+        this.setState({
+            cards: cloneStateCards,
+        });
     };
 
     render() {
