@@ -1,3 +1,8 @@
++Вприсать название города в поле например Нижний Новгород
++Надать GO
++Введите ещё одно название города, добавится ещё одна карточка
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
